@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RecyclerViewAndroid</string>
+    <string name="app_main_name">Movies</string>
+</resources>
