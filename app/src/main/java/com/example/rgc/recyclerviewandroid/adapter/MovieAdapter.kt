@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.rgc.recyclerviewandroid.R
@@ -37,6 +38,12 @@ class MovieAdapter(private val dataMovies : List<Movie>) : RecyclerView.Adapter<
             title_movie.text = movie.title
             image_movie.ratio = 1.5f
             Glide.with(image_movie.context).load(movie.enclosure).into(image_movie);
+            // Listener item click
+            itemView.setOnClickListener(View.OnClickListener {
+                Toast.makeText(title_movie.context, title_movie.text, Toast.LENGTH_LONG).show()
+                //Show detail item movie
+                //TODO
+            })
 
         }
 

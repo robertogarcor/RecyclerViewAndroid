@@ -1,10 +1,11 @@
-package com.example.rgc.recyclerviewandroid
+package com.example.rgc.recyclerviewandroid.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
+import com.example.rgc.recyclerviewandroid.R
 import com.example.rgc.recyclerviewandroid.adapter.MovieAdapter
 import com.example.rgc.recyclerviewandroid.databinding.ActivityMainBinding
 import com.example.rgc.recyclerviewandroid.viewmodel.MainViewModel

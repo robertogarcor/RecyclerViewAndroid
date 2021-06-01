@@ -28,5 +28,4 @@ class AspectRatioImageView @JvmOverloads constructor(
         setMeasuredDimension(width, height)
     }
 
-
 }
