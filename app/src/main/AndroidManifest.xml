@@ -12,7 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RecyclerViewAndroid"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ui.MovieDetailActivity"></activity>
+        <activity android:name=".ui.MovieDetailActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity android:name=".ui.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

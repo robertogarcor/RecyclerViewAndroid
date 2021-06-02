@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var viewModel: MainViewModel
     private lateinit var binding : ActivityMainBinding
-    private lateinit var linearManager: GridLayoutManager
+    private lateinit var layoutDesign: GridLayoutManager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,12 +26,12 @@ class MainActivity : AppCompatActivity() {
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
 
         // Layout Design: LinearLayoutManager | GridLayoutManager | StaggeredGridLayoutManager
-        linearManager = GridLayoutManager(this, 3)
-        binding.recyclerviewMovie.layoutManager = linearManager
+        layoutDesign = GridLayoutManager(this, 3)
+        binding.recyclerviewMovie.layoutManager = layoutDesign
 
         viewModel.movies.observe(this, Observer { movies ->
             // Map recycleView and adapter MovieAdapter
-            binding.recyclerviewMovie.adapter = MovieAdapter(movies)
+            binding.recyclerviewMovie.adapter = MovieAdapter(this, movies)
         })
     }
 }

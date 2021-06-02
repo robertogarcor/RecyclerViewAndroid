@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">RecyclerViewAndroid</string>
     <string name="app_main_name">Movies</string>
+
+    <!-- activity detail movie -->
+    <string name="act_toolbar_detail_movie_title">Detail Movie</string>
+    <string name="act_detail_movie_type">Type Movie</string>
+    <string name="act_detail_movie_duration">Duration Movie</string>
+    <string name="act_detail_movie_title">Title Movie</string>
+    <string name="act_detail_movie_description">Description Movie</string>
+
 </resources>
