@@ -1,2 +1,2 @@
 # RecyclerViewAndroid
-Sample dinamic movie list
+Sample dinamic movie list and detail movie
